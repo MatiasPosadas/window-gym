@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    position: relative;
+}
+:root {
+    --font-comun:'Kanit', sans-serif;
+    --font-bold:'League Gothic', sans-serif;;
+    --font-cursiva: 'Tangerine', cursive;
+    --blanco: #fff;
+    --amarillo: #fffb00;
+    --purpura: #7142de;
+    --purpura-oscuro: #341f66;
+    --negro: #000000;
+    --colorado: #e6206c;
+    --degratato-1: #ff3967;
+    --degratato-2: #fc755a;
+}
+/*- - - - C O N T A I N E R - - - - - */
+.container {
+    width: 100%;
+    height: 100vh;
+}
+/*- - - - - C T A - - - - -*/
+.cta {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: max-content;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    color: var(--blanco);
+    letter-spacing: 1px;
+    background-color: #7142de;
+}
+/*- - - - R E S A L T A D O - - - */
+.resaltado-y {
+    color: #fffb00;
+}
+
+
+/*- - - - - H E A D E R - - -  -*/
+nav {
+    height: auto;
+}
+.logo {
+    width: auto;
+    height: 25px;
+}
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 8vh;
+    position: fixed;
+    top: 0;
+    transition: 0.7s ease-in-out;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.39);
+}
+nav a {
+    height: 100%;
+    text-decoration: none;
+    color: #fff;
+}
+nav a span {
+    color: var(--blanco);
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+.ham {
+    display: none;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+.ham span {
+    display: block;
+    background-color: #fff;
+    height: 3px;
+    width: 20px;
+    margin: 7px auto;
+    border-radius: 2px;
+}
+.enlaces__menu {
+    display: flex;
+    padding: 0;
+}
+.enlaces__menu li {
+    padding: 0 40px;
+    list-style-type: none;
+    transition: 0.3s;
+}
+.enlaces__menu li a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+/*- - - - - H E A D E R - - - - - */
+
+#header {
+    background-image: url('../media/header-background.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#header .header__box {
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+#header .header__box .header__content {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2rem;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 30%;
+    border-radius: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#header .header__box .header__content .cta {
+    background-color: #fffb00;
+    color: black;
+}
+#header .header__box .header__content h2 {
+    color: var(--blanco);
+    text-transform: uppercase;
+    text-align: center;
+    font-family: var(--font-bold);
+    font-size: 4.5rem;
+    letter-spacing: 0.1rem;
+}
+#header .header__box .header__content h3 {
+    color: var(--blanco);
+    font-weight: lighter;
+}
+
+/*- - - - P R E S E N T A C I O N - -  - -*/
+
+#presentacion .presentacion__box {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: wheat;
+}
+#presentacion .presentacion .presentacion__top {
+    width: 100%;
+    height: 20rem;
+    background-color: rgb(255, 18, 129);
+}
+#presentacion .presentacion .presentacion__top h2 {
+    text-transform: uppercase;
+}
+#presentacion .presentacion .presentacion__botom {
+    width: 100%;
+    height: 45%;
+    display: flex;
+}
+.presentacion__botom .presentacion__clase {
+    width: 30%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #341f66;
+}
+.presentacion__botom .presentacion__clase .presentacion__img {
+    width: 100%;
+    height: auto;
+}
+.presentacion__botom .presentacion__clase .presentacion__img img {
+    width: 100%;
+}
