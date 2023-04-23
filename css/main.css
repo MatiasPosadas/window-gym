@@ -43,9 +43,12 @@ body {
     padding: 1rem 2rem;
     border-radius: 2rem;
     border: none;
-    color: var(--blanco);
+    /* color: var(--blanco); */
+    color: black;
     letter-spacing: 1px;
-    background-color: #7142de;
+    background-color: yellow;
+    transition: all .2s ease-in-out;
+    /* margin: 0 auto; */
 }
 /*- - - - R E S A L T A D O - - - */
 .resaltado-y {
@@ -71,7 +74,7 @@ nav {
     top: 0;
     transition: 0.7s ease-in-out;
     z-index: 5;
-    background-color: rgba(0, 0, 0, 0.39);
+    background-color: rgba(0, 0, 0, 0.658);
 }
 nav a {
     height: 100%;
@@ -124,6 +127,7 @@ nav a span {
     background-repeat: no-repeat;
     position: relative;
 }
+
 #header .header__box {
     width: 95%;
     height: 100%;
@@ -160,37 +164,78 @@ nav a span {
     color: var(--blanco);
     font-weight: lighter;
 }
-
 /*- - - - P R E S E N T A C I O N - -  - -*/
-
+#presentacion {
+    height: auto;
+    background-color: #242424;
+    padding: 0 0 8rem 0;
+}
 #presentacion .presentacion__box {
     width: 95%;
+    height: auto;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: wheat;
+    /* background-color: rgb(100, 100, 100); */
 }
-#presentacion .presentacion .presentacion__top {
+#presentacion .presentacion__top {
     width: 100%;
-    height: 20rem;
-    background-color: rgb(255, 18, 129);
-}
-#presentacion .presentacion .presentacion__top h2 {
-    text-transform: uppercase;
-}
-#presentacion .presentacion .presentacion__botom {
-    width: 100%;
-    height: 45%;
+    height: 15rem;
+    border-radius: 2rem;
+    margin-top: 4rem;
+    text-align: center;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(255, 238, 0); */
+}
+#presentacion .presentacion__top h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 2.8rem;
+}
+#presentacion  .presentacion__botom {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
 }
 .presentacion__botom .presentacion__clase {
     width: 30%;
+    min-width: 25rem;
     height: 80%;
+    border-radius: 2rem;
+    text-align: center;
+    margin: 4rem auto;
+    padding: 0 0 4rem 0;
+    overflow: hidden;
+    background-color: rgb(46, 46, 46);
+    transition: all 0.3s ease-in-out;
+}
+.presentacion__botom .presentacion__clase:hover {
+    transform: scale(1.02);
+    filter: drop-shadow(0px 0px 5px #FFC800);
+}
+.presentacion__botom .presentacion__clase .presentacion__info {
+    padding: 0 0.4rem;
     display: flex;
+    gap: 1rem;
     flex-direction: column;
     align-items: center;
-    background-color: #341f66;
+    justify-content: center;
+}
+.presentacion__botom .presentacion__clase .presentacion__info  h3 {
+    color: yellow;
+    text-transform: uppercase;
+    padding-top: 1rem;
+    font-weight: bold;
+}
+.presentacion__botom .presentacion__clase .presentacion__info  p {
+    color: #fff;
 }
 .presentacion__botom .presentacion__clase .presentacion__img {
     width: 100%;
@@ -198,4 +243,18 @@ nav a span {
 }
 .presentacion__botom .presentacion__clase .presentacion__img img {
     width: 100%;
+}
+#presentacion .cta {
+    margin: 0 auto;
+    transition: all .2s ease-in-out;
+}
+.cta:hover {
+    filter: drop-shadow(0px 0px 5px #FFC800);
+    transform: scale(1.05);
+}
+
+
+/*- - - - A R A N C E L E S - - - - */
+#aranceles {
+    background-color: #242424;
 }
