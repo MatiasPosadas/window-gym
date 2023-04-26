@@ -44,16 +44,16 @@ body {
     padding: 1rem 2rem;
     border-radius: 2rem;
     border: none;
-    /* color: var(--blanco); */
-    color: black;
+    color: var(--blanco);
+    /* color: black; */
     letter-spacing: 1px;
-    background-color: yellow;
+    background-color: var(--colorado);
     transition: all .2s ease-in-out;
     /* margin: 0 auto; */
 }
 /*- - - - R E S A L T A D O - - - */
 .resaltado-y {
-    color: #fffb00;
+    color: var(--colorado);
 }
 
 
@@ -151,8 +151,8 @@ nav a span {
     background-color: rgba(0, 0, 0, 0.5);
 }
 #header .header__box .header__content .cta {
-    background-color: #fffb00;
-    color: black;
+    background-color: var(--colorado);
+    /* color: black; */
 }
 #header .header__box .header__content h2 {
     color: var(--blanco);
@@ -169,7 +169,7 @@ nav a span {
 /*- - - - P R E S E N T A C I O N - -  - -*/
 #presentacion {
     /* height: auto; */
-    background-color: #242424;
+    background-color: #dddddd;
     padding: 0 0 8rem 0;
 }
 #presentacion .presentacion__box {
@@ -193,7 +193,7 @@ nav a span {
     /* background-color: rgb(255, 238, 0); */
 }
 #presentacion .presentacion__top h2 {
-    color: #fff;
+    color: #272727;
     text-transform: uppercase;
     font-weight: 800;
     font-size: 2.8rem;
@@ -212,18 +212,18 @@ nav a span {
     height: 80%;
     border-radius: 2rem;
     text-align: center;
+    filter: drop-shadow(0px 0px 5px #525251);
     margin: 4rem auto;
     padding: 0 0 4rem 0;
     overflow: hidden;
-    background-color: rgb(46, 46, 46);
+    background-color: rgb(224, 224, 224);
     transition: all 0.3s ease-in-out;
 }
 .presentacion__botom .presentacion__clase:hover {
-    transform: scale(1.02);
-    filter: drop-shadow(0px 0px 5px #FFC800);
+    transform: scale(1.01);
 }
 .presentacion__botom .presentacion__clase:hover img {
-    transform: scale(1.1);
+    transform: scale(1.02);
 }
 .presentacion__botom .presentacion__clase .presentacion__info {
     padding: 0 0.4rem;
@@ -234,13 +234,14 @@ nav a span {
     justify-content: center;
 }
 .presentacion__botom .presentacion__clase .presentacion__info  h3 {
-    color: yellow;
+    color: var(--colorado);
     text-transform: uppercase;
     padding-top: 1rem;
     font-weight: bold;
 }
 .presentacion__botom .presentacion__clase .presentacion__info  p {
     color: #fff;
+    color: var(--purpura-oscuro);
 }
 .presentacion__botom .presentacion__clase .presentacion__img {
     width: 100%;
@@ -263,4 +264,112 @@ nav a span {
 /*- - - - A R A N C E L E S - - - - */
 #aranceles {
     background-color: #242424;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding-top: 30rem;
+}
+#aranceles .divisor {
+    width: 200%;
+    height: 50rem;
+    position: absolute;
+    top: -46rem;
+    left: -20rem;
+    transform: rotate(-7deg);
+    background-color: #dddddd;
+    /* background-color: blue; */
+    /* background-color: ; */
+}
+
+#aranceles .aranceles__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    grid-template-rows: auto;
+    place-items: center;
+    place-content: center;
+    justify-content: center;
+    gap: 4rem;
+}
+/*- - - C A R D   D E R E C H A - - - */
+#aranceles .aranceles__container .arancel__card {
+    width: 50%;
+    min-width: 35rem;
+    margin: 0 auto;
+}
+#aranceles .aranceles__container .arancel__card .card {
+    width: 100%;
+    height: auto;
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2e2e2e;
+    border-radius: 2rem;
+    position: relative;
+    box-shadow: 0px -0px 13px 6px rgba(230,32,108,0.59);
+-webkit-box-shadow: 0px -0px 13px 6px rgba(230,32,108,0.59);
+-moz-box-shadow: 0px -0px 13px 6px rgba(230,32,108,0.59);
+
+
+}
+#aranceles .aranceles__container .card .mensual {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+#aranceles .aranceles__container .card h3 {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 3rem;
+    align-items: start;
+    text-transform: uppercase;
+    color: #dddddd;
+    border-bottom: 2px solid white;
+    margin-bottom: 4rem;
+}
+#aranceles .aranceles__container .card span {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #dddddd;
+}
+#aranceles .aranceles__container .card .price {
+    font-size: 5rem;
+    font-weight: 600;
+    color: #dddddd;
+    margin-bottom: 4rem;
+    /* border-top: 1px solid white; */
+}
+#aranceles .aranceles__container .card .cta {
+    width: 90%;
+    background-color: var(--colorado);
+    text-align: center;
+    margin-bottom: 4rem;
+}
+#aranceles .aranceles__container .card p {
+    color: white;
+}
+
+/*- - - C A R D   I Z Q U I E R D A -- - - */
+
+#aranceles .aranceles__container .arancel__info {
+    width: 80%;
+    min-width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+
+#aranceles .aranceles__container .arancel__info h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 4rem;
+}
+#aranceles .aranceles__container .arancel__info p {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: white;
 }

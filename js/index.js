@@ -1,6 +1,9 @@
 const tabs = document.querySelectorAll('.tab-btn');
 const all_content = document.querySelectorAll('.content');
 
+
+
+
 tabs.forEach((tab,index)=> {
     tab.addEventListener('click', (e) => {
         tabs.forEach(tab=>{tab.classList.remove('active')});
