@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Braah+One&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -15,16 +15,15 @@ body {
 }
 :root {
     --font-comun:'Kanit', sans-serif;
-    --font-bold:'League Gothic', sans-serif;;
+    --font-bold:'Braah One', sans-serif;;
     --font-cursiva: 'Tangerine', cursive;
     --blanco: #fff;
     --amarillo: #fffb00;
     --purpura: #7142de;
     --purpura-oscuro: #341f66;
-    --negro: #000000;
+    --negro: #1b1b1b;
     --colorado: #e6206c;
-    --degratato-1: #ff3967;
-    --degratato-2: #fc755a;
+    --gris: #dddddd;
 }
 /*- - - - C O N T A I N E R - - - - - */
 .container {
@@ -348,9 +347,9 @@ nav a span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #2e2e2e;
+    background-color: #dddddd;
     border-radius: 2rem;
-    background-image: url('../media/patron-yeso-oscura.jpg');
+    /* background-image: url('../media/patron-yeso-oscura.jpg'); */
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -365,24 +364,26 @@ nav a span {
 }
 #aranceles .aranceles__container .card h3 {
     width: 80%;
+    font-family: var(--font-bold);
     text-align: center;
     margin: 0 auto;
     font-size: 3rem;
     align-items: start;
     text-transform: uppercase;
-    color: #dddddd;
+    color: var(--negro);
     border-bottom: 2px solid var(--colorado);
     margin-bottom: 4rem;
 }
 #aranceles .aranceles__container .card span {
     font-size: 3rem;
     text-transform: uppercase;
-    color: #dddddd;
+    color: var(--negro);
 }
 #aranceles .aranceles__container .card .price {
     font-size: 5rem;
     font-weight: 600;
-    color: #dddddd;
+    color: var(--negro);
+
     margin-bottom: 4rem;
     /* border-top: 1px solid white; */
 }
@@ -393,7 +394,7 @@ nav a span {
     margin-bottom: 4rem;
 }
 #aranceles .aranceles__container .card p {
-    color: white;
+    color: var(--negro);
     line-height: 4rem;
 }
 #aranceles .fa-circle-check {
