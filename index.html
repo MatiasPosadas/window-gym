@@ -12,7 +12,7 @@
     <nav class="nav" id="nav">
         <a href="#inicio">
             <img class="logo" src="media/LOGO.png" alt="logo">
-            <span>Window GYM</span>
+            <span class="titulo"><span class="resaltado-y">W</span>indow GYM</span>
 
             <ul class="enlaces__menu">
                 <li><a href="#inicio">Inicio</a></li>
@@ -27,12 +27,20 @@
                 <span class="br-3"></span>
             </button>
     </nav>
+    <div class="botones">
+        <div class="boton-facebook">
+            <img src="media/logo-facebook.png" alt="">
+        </div>
+        <div class="boton-instagram">
+            <img src="media/logo-instagram.png" alt="">
+        </div>
+    </div>
     <header id="header" class="container">
         <div class="header__box">
             <div class="header__content">
                 <h2>despertá tu<span class="resaltado-y"> mejor</span> versión </h2>
                 <h3>Tenemos muchas <span class="resaltado-y">formas</span> de ponerte en forma.</h3>
-                <a href="#" class="cta">Comienza ahora</a>
+                <a href="#presentacion" class="cta">Comienza ahora</a>
             </div>
         </div>
         <div class="background-header">
@@ -109,9 +117,51 @@
             </div>
         </div>
     </section>
+    <section class="container" id="maps">
+        <div class="sede1">
+            <h3>Av. Calle Real 186</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.233109491421!2d-58.72384012065432!3d-34.67406569999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbff61a66fea3%3A0x4aa0b0b7f6c8f49f!2sWINDOW%20Fitness%20Gimnasio!5e0!3m2!1ses!2sar!4v1682605375063!5m2!1ses!2sar" width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mape"></iframe>
+        </div>
+        <div class="sede2">
+            <h3>Sede Av. del Libertador 223</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.3160951616746!2d-58.728645811145!3d-34.67197089999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbfa6c14c6cef%3A0x61c07f998e223d1!2sWindow%20gym!5e0!3m2!1ses!2sar!4v1682605535818!5m2!1ses!2sar" width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mape"></iframe>
+        </div>
+    </section>
     <footer>
 
     </footer>
     <script src="js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+
+        //smoth scroll
+
+    $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 1000, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+        });
+        } // End if
+    });
+});
+</script>
+
 </body>
 </html>

@@ -126,6 +126,9 @@ body {
         width: 95%;
         margin-top: 10rem;
     }
+    .content__box .content h2 {
+        font-size: 2.5rem;
+    }
 }
 
 

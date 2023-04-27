@@ -9,11 +9,13 @@ html {
     font-size: 62.5%;
     width: 100%;
     height: 100%;
+    /* overflow: hidden; */
 }
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 1.8rem;
     position: relative;
+    background-color: var(--gris);
 }
 :root {
     --font-comun:'Kanit', sans-serif;
@@ -56,8 +58,25 @@ body {
 .resaltado-y {
     color: var(--colorado);
 }
-
-
+/*- - - - B O T O N E S - - - - */
+.botones {
+    display: flex;
+    flex-direction: column;
+    width: 5rem;
+    height: auto;
+    padding: 1rem 0.5rem;
+    border-radius: 2rem;
+    background-color: #52525177;
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 0.5rem;
+    z-index: 5;
+}
+.botones img {
+    width: 100%;
+}
 /*- - - - - H E A D E R - - -  -*/
 nav {
     height: auto;
@@ -179,6 +198,7 @@ nav a span {
 }
 #header .header__box .header__content {
     width: max-content;
+    text-align: center;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -407,7 +427,7 @@ nav a span {
 
 #aranceles .aranceles__container .arancel__info {
     width: 80%;
-    min-width: 350px;
+    /* min-width: 350px; */
     display: flex;
     align-items: center;
     justify-content: start;
@@ -426,9 +446,142 @@ nav a span {
     line-height: 2.5rem;
     color: white;
 }
+/*- - - - M A P S - - - - */
+#maps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#maps .sede1, .sede2 {
+    margin: 0 auto;
+    text-align: center;
+}
+#maps h3 {
+    margin-bottom: 1rem;
+}
+#maps .mape {
+    box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.43);
+-webkit-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.43);
+-moz-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.43);
+}
 /*- - - F O O T E R - - - */
 footer {
     width: 100%;
     height: 15rem;
     background-color: black;
+}
+
+
+@media (max-width:850px) {
+    .logo {
+        padding-left: 25px;
+    }
+    .logo.fuera {
+        display: none;
+    }
+    .ham {
+        display: block;
+        position: absolute;
+        top: 0;
+        transform: translateY(50%);
+        right: 30px;
+        transition: 0.2s 0.1;
+    }
+    .ham span {
+        background-color: var(--colorado);
+    }
+    .ham:hover {
+        transform: rotate(360deg);
+    }
+    nav {
+        flex-direction: column;
+        padding: 0;
+    }
+    .titulo {
+        margin-top: 1rem;
+        padding: 1rem 0 0 0;
+    }
+    nav .span {
+        margin-top: 1rem;
+    }
+    nav .enlaces__menu {
+        height: 150%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        display: none;
+        opacity: 0;
+    }
+    @keyframes muestraMenu {
+        from { opacity: 0;}
+        to {opacity: 1;}
+    }
+    nav .enlaces__menu li {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+    nav .enlaces__menu.activado {
+        display: flex;
+        animation: muestraMenu 350ms ease-in-out both;
+        margin-top: 4rem;
+    }
+    .br-1.animado {
+        transform: rotate(-45deg)translate(-7px, 7px);
+    }
+    .br-2.animado {
+        opacity: 0;
+    }
+    .br-3.animado {
+        transform: rotate(45deg) translate(-7px, -7px);
+    }
+    #header .header__box .header__content {
+        width: 80%;
+    }
+    #aranceles .aranceles__container {
+        grid-template-columns: 1fr;
+    }
+    #aranceles .aranceles__container .arancel__info p {
+        text-align: center;
+    }
+}
+@media (max-width:444px) {
+    #maps {
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .botones {
+        flex-direction: row;
+        width: 30%;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: 7rem;
+        gap: 2rem;
+    }
+}
+
+@media (max-width:380px) {
+    nav a span {
+        display: none;
+    }
+    .botones {
+        width: 30%;
+    }
+    #aranceles .aranceles__container .arancel__card .card {
+        min-width: 200px;
+    }
+    #header .header__box .header__content {
+        width: 110%;
+    }
+}
+
+@media (max-width:300px) {
+    .botones {
+        width: 40%;
+    }
 }
