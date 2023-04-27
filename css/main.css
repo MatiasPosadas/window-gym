@@ -94,7 +94,7 @@ nav {
     position: fixed;
     top: 0;
     transition: 0.7s ease-in-out;
-    z-index: 5;
+    z-index: 10;
     background-color: rgba(0, 0, 0, 0.747);
 }
 nav a {
