@@ -58,8 +58,7 @@ body {
     cursor: pointer;
 }
 .tab__box .tab-btn.active {
-    color: #4b0fb9;
-    color: var(--colorado);
+    color: yellow;
 }
 .content__box {
     padding: 20px;
@@ -95,6 +94,7 @@ body {
     color: var(--gris);
 }
 .content__box .content h2{
+    letter-spacing: 0.3rem;
     margin-bottom: 10px;
     font-size: 4rem;
     font-family: var(--font-bold);
@@ -125,6 +125,8 @@ body {
     .container {
         width: 95%;
         margin-top: 10rem;
+        height: 80%;
+        overflow: scroll;
     }
     .content__box .content h2 {
         font-size: 2.5rem;

@@ -95,7 +95,7 @@ nav {
     top: 0;
     transition: 0.7s ease-in-out;
     z-index: 5;
-    background-color: rgba(0, 0, 0, 0.658);
+    background-color: rgba(0, 0, 0, 0.747);
 }
 nav a {
     height: 100%;
@@ -555,12 +555,16 @@ footer .footer__container p {
     #header .header__box .header__content {
         width: 80%;
     }
+    #aranceles {
+        padding-top: 15rem;
+    }
     #aranceles .aranceles__container {
         grid-template-columns: 1fr;
     }
     #aranceles .aranceles__container .arancel__info p {
         text-align: center;
     }
+    
 }
 @media (max-width:444px) {
     #maps {
