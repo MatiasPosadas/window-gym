@@ -11,7 +11,6 @@ html {
     font-size: 62.5%;
     width: 100%;
     height: 100%;
-    /* overflow: hidden; */
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -52,11 +51,9 @@ body {
     border-radius: 2rem;
     border: none;
     color: var(--blanco);
-    /* color: black; */
     letter-spacing: 1px;
     background-color: var(--colorado);
     transition: all .2s ease-in-out;
-    /* margin: 0 auto; */
 }
 /*- - - - R E S A L T A D O - - - */
 .resaltado-y {
@@ -152,7 +149,6 @@ nav a span {
 
 #header {
     height: 100vh;
-    /* background-image: url('../media/header-background.jpg'); */
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -223,13 +219,11 @@ nav a span {
 }
 #header .header__box .header__content .cta {
     background-color: var(--colorado);
-    /* color: black; */
 }
 #header .header__box .header__content h2 {
     color: var(--blanco);
     text-transform: uppercase;
     text-align: center;
-    /* font-family: var(--font-bold); */
     font-size: 4.5rem;
     letter-spacing: 0.1rem;
 }
@@ -241,7 +235,6 @@ nav a span {
 
 /*- - - - P R E S E N T A C I O N - -  - -*/
 #presentacion {
-    /* height: auto; */
     background-color: #dddddd;
     padding: 0 0 8rem 0;
     overflow: hidden;
@@ -253,18 +246,15 @@ nav a span {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /* background-color: rgb(100, 100, 100); */
 }
 #presentacion .presentacion__top {
     width: 100%;
     height: 15rem;
     border-radius: 2rem;
-    /* margin-top: 4rem; */
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: rgb(255, 238, 0); */
 }
 #presentacion .presentacion__top h2 {
     color: #272727;
@@ -336,7 +326,6 @@ nav a span {
     margin-top: 2REM;
 }
 .cta:hover {
-    /* filter: drop-shadow(0px 0px 5px #FFC800); */
     transform: scale(1.05);
 }
 
@@ -361,10 +350,7 @@ nav a span {
     left: -20rem;
     transform: rotate(-7deg);
     background-color: #dddddd;
-    /* background-color: blue; */
-    /* background-color: ; */
 }
-
 #aranceles .aranceles__container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
@@ -391,7 +377,6 @@ nav a span {
     align-items: center;
     background-color: #dddddd;
     border-radius: 2rem;
-    /* background-image: url('../media/patron-yeso-oscura.jpg'); */
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -425,9 +410,7 @@ nav a span {
     font-size: 5rem;
     font-weight: 600;
     color: var(--negro);
-
     margin-bottom: 4rem;
-    /* border-top: 1px solid white; */
 }
 #aranceles .aranceles__container .card .cta {
     width: 90%;
@@ -447,7 +430,6 @@ nav a span {
 
 #aranceles .aranceles__container .arancel__info {
     width: 80%;
-    /* min-width: 350px; */
     display: flex;
     align-items: center;
     justify-content: start;
@@ -503,17 +485,11 @@ footer .footer__container p {
     color: white;
 }
 
-
-
-
-
-
 @media (max-width:1100px) {
 #presentacion .presentacion__clase {
     flex-direction: column;
     position: relative;
 }
-
 #presentacion .presentacion__clase .presentacion__info {
     position: absolute;
     left: 50%;
@@ -531,22 +507,6 @@ footer .footer__container p {
     margin: 0 auto;
 }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width:850px) {
     .logo {
         padding-left: 25px;
@@ -629,7 +589,6 @@ footer .footer__container p {
         font-size: 6rem;
     }
 }
-
 @media (max-width:492px) {
 #presentacion .presentacion__clase {
     height: auto;
@@ -645,23 +604,11 @@ footer .footer__container p {
         flex-direction: column;
         gap: 4rem;
     }
-    .botones {
-        /* flex-direction: row; */
-        /* width: 30%; */
-        /* bottom: 0; */
-        /* left: 50%; */
-        /* transform: translate(-50%); */
-        /* margin-top: 7rem; */
-        gap: 2rem;
-    }
 }
 
 @media (max-width:380px) {
     nav a span {
         display: none;
-    }
-    .botones {
-        /* width: 30%; */
     }
     #aranceles .aranceles__container .arancel__card .card {
         width: 90%;
@@ -674,7 +621,6 @@ footer .footer__container p {
 
 @media (max-width:300px) {
     .botones {
-        /* width: 40%; */
     }
     #aranceles .aranceles__container .arancel__info p {
         padding: 0.5rem;
