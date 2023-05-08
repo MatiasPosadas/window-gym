@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Braah+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600;800&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -21,6 +22,7 @@ body {
 :root {
     --font-comun:'Kanit', sans-serif;
     --font-bold:'Braah One', sans-serif;
+    --font-title:'Raleway', sans-serif;
     --font-bold-strong:'Permanent Marker', cursive;
     --font-cursiva: 'Tangerine', cursive;
     --blanco: #fff;
@@ -140,6 +142,11 @@ nav a span {
     font-weight: 600;
     color: #fff;
 }
+.enlaces__menu li a:hover {
+    color: var(--colorado);
+    transform: scale(1.5);
+    transition: all ease 0.3s;
+}
 
 /*- - - - - H E A D E R - - - - - */
 
@@ -201,6 +208,7 @@ nav a span {
 #header .header__box .header__content {
     width: max-content;
     text-align: center;
+    font-family: var(--font-title);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -229,12 +237,6 @@ nav a span {
     color: var(--blanco);
     font-weight: lighter;
 }
-
-
-
-
-
-
 
 
 /*- - - - P R E S E N T A C I O N - -  - -*/
@@ -269,6 +271,8 @@ nav a span {
     text-transform: uppercase;
     font-weight: 800;
     font-size: 2.8rem;
+    font-family: var(--font-title);
+
 }
 #presentacion  .presentacion__botom {
     width: 100%;
@@ -310,6 +314,8 @@ nav a span {
     text-transform: uppercase;
     padding-top: 1rem;
     font-weight: bold;
+    color: white;
+    filter: drop-shadow(6px 8px 3px VAR(--colorado));
 }
 .presentacion__botom .presentacion__clase .presentacion__info  p {
     color: #fff;
