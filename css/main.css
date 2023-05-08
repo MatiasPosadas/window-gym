@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Braah+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -19,7 +20,8 @@ body {
 }
 :root {
     --font-comun:'Kanit', sans-serif;
-    --font-bold:'Braah One', sans-serif;;
+    --font-bold:'Braah One', sans-serif;
+    --font-bold-strong:'Permanent Marker', cursive;
     --font-cursiva: 'Tangerine', cursive;
     --blanco: #fff;
     --amarillo: #fffb00;
@@ -227,14 +229,23 @@ nav a span {
     color: var(--blanco);
     font-weight: lighter;
 }
+
+
+
+
+
+
+
+
 /*- - - - P R E S E N T A C I O N - -  - -*/
 #presentacion {
     /* height: auto; */
     background-color: #dddddd;
     padding: 0 0 8rem 0;
+    overflow: hidden;
 }
 #presentacion .presentacion__box {
-    width: 95%;
+    width: 100%;
     height: auto;
     margin: 0 auto;
     display: flex;
@@ -246,7 +257,7 @@ nav a span {
     width: 100%;
     height: 15rem;
     border-radius: 2rem;
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
     text-align: center;
     display: flex;
     align-items: center;
@@ -263,28 +274,26 @@ nav a span {
     width: 100%;
     height: auto;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    gap: 1rem;
     align-items: center;
 }
 .presentacion__botom .presentacion__clase {
-    width: 30%;
-    min-width: 25rem;
-    height: 80%;
-    border-radius: 2rem;
+    width: 100%;
+    height: 34rem;
+    display: flex;
     text-align: center;
-    filter: drop-shadow(0px 0px 5px #525251);
-    margin: 4rem auto;
     padding: 0 0 4rem 0;
     overflow: hidden;
-    background-color: rgb(224, 224, 224);
+    background-color: var(--negro);
     transition: all 0.3s ease-in-out;
 }
 .presentacion__botom .presentacion__clase:hover {
     transform: scale(1.01);
+    filter: drop-shadow(0px 0px 5px var(--colorado));
 }
 .presentacion__botom .presentacion__clase:hover img {
-    transform: scale(1.02);
+    transform: scale(1.01);
 }
 .presentacion__botom .presentacion__clase .presentacion__info {
     padding: 0 0.4rem;
@@ -296,17 +305,20 @@ nav a span {
 }
 .presentacion__botom .presentacion__clase .presentacion__info  h3 {
     color: var(--colorado);
+    font-family: var(--font-bold-strong);
+    font-size: 8rem;
     text-transform: uppercase;
     padding-top: 1rem;
     font-weight: bold;
 }
 .presentacion__botom .presentacion__clase .presentacion__info  p {
     color: #fff;
-    color: var(--purpura-oscuro);
+    line-height: 2.2rem;
 }
 .presentacion__botom .presentacion__clase .presentacion__img {
     width: 100%;
-    height: auto;
+    height: max-content;
+    transition: all 0.3s ease-in-out;
 }
 .presentacion__botom .presentacion__clase .presentacion__img img {
     width: 100%;
@@ -315,9 +327,10 @@ nav a span {
 #presentacion .cta {
     margin: 0 auto;
     transition: all .2s ease-in-out;
+    margin-top: 2REM;
 }
 .cta:hover {
-    filter: drop-shadow(0px 0px 5px #FFC800);
+    /* filter: drop-shadow(0px 0px 5px #FFC800); */
     transform: scale(1.05);
 }
 
@@ -456,15 +469,12 @@ nav a span {
 }
 #maps .sede1, .sede2 {
     margin: 0 auto;
-    text-align: center;
-}
+    text-align: center;}
 #maps h3 {
     margin-bottom: 1rem;
 }
 #maps .mape {
-    box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.43);
--webkit-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.43);
--moz-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.43);
+    filter: drop-shadow(0px 0px 5px var(--colorado));
 }
 /*- - - F O O T E R - - - */
 footer {
@@ -486,6 +496,51 @@ footer .footer__container p {
     margin-top: 1rem;
     color: white;
 }
+
+
+
+
+
+
+@media (max-width:1100px) {
+#presentacion .presentacion__clase {
+    flex-direction: column;
+    position: relative;
+}
+
+#presentacion .presentacion__clase .presentacion__info {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50%;
+}
+.presentacion__botom .presentacion__clase .presentacion__info  h3 {
+    font-size: 10rem;
+}
+.presentacion__botom .presentacion__clase .presentacion__info  p {
+    display: none;
+}
+.presentacion__botom .presentacion__clase .presentacion__img {
+    width: 100%;
+    margin: 0 auto;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width:850px) {
     .logo {
         padding-left: 25px;
@@ -564,8 +619,21 @@ footer .footer__container p {
     #aranceles .aranceles__container .arancel__info p {
         text-align: center;
     }
-    
+    .presentacion__botom .presentacion__clase .presentacion__info  h3 {
+        font-size: 6rem;
+    }
 }
+
+@media (max-width:492px) {
+#presentacion .presentacion__clase {
+    height: auto;
+    padding: 0;
+    }
+.presentacion__botom .presentacion__clase .presentacion__info  h3 {
+    font-size: 3rem;
+}
+}
+
 @media (max-width:444px) {
     #maps {
         flex-direction: column;
