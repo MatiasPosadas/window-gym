@@ -300,7 +300,7 @@ nav a span {
 .presentacion__botom .presentacion__clase .presentacion__info  h3 {
     color: var(--colorado);
     font-family: var(--font-bold-strong);
-    font-size: 8rem;
+    font-size: 6rem;
     text-transform: uppercase;
     padding-top: 1rem;
     font-weight: bold;
@@ -462,6 +462,7 @@ nav a span {
     margin-bottom: 1rem;
 }
 #maps .mape {
+    /* height: 100%; */
     filter: drop-shadow(0px 0px 5px var(--colorado));
 }
 /*- - - F O O T E R - - - */
